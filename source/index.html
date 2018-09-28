@@ -5,24 +5,36 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+
+    <!--Header-->
+
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current"><a href="#" class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a href="#" clss="main-nav__link">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#" clss="main-nav__link">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#" clss="main-nav__link">Html academy</a></li>
+            <li class="main-nav__item main-nav__item--current">
+              <a href="#" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" clss="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" clss="main-nav__link">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" clss="main-nav__link">Html academy</a>
+            </li>
           </ul>
         </div>
       </nav>
       <div class="logo">
-        <a>
-          <img src="http://placehold.it/150x100" alt="City of Sedona" width="102" height="83">
-        </a>
+        <img src="http://placehold.it/150x100" alt="City of Sedona" width="102" height="83">
       </div>
     </header>
+
+    <!--Main-->
+
     <main class="page-main">
       <div class="intro">
         <img src="http://placehold.it/150x100" alt="Sedona" class="intro-banner" width="282" height="214">
@@ -33,6 +45,9 @@
           <p class="reasons__description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </header>
         <ol class="reason__row">
+
+          <!----№1---->
+
           <li class="reason reason--blue">
             <h2 class="reason-title">Настоящий городок</h2>
             <span class="reason__number">№1</span>
@@ -61,7 +76,10 @@
               </li>
             </ul>
           </li>
-          <li class="reason">
+
+          <!----№2---->
+
+          <li class="reason reason--blue">
             <h2 class="reason-title">Там есть мост дьявола</h2>
             <div class="reason-number">№2</div>
             <p class="reason-description">Да, по нему можно пройти если вы осмелитесь, конечно</p>
@@ -69,16 +87,25 @@
               <img src="http://placehold.it/150x100" alt="Мотель" width="520" height="260">
             </div>
           </li>
+
+          <!----№3---->
+
           <li class="reason">
             <h2 class="reason-title">Небольшая площадь</h2>
             <div class="reason-number">№3</div>
             <p class="reason-description">Все интересные места находятся очень близко</p>
           </li>
+
+          <!----№4---->
+
           <li class="reason">
             <h2 class="reason-title">Красивая дорога</h2>
             <div class="reason-number">№4</div>
             <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
+
+          <!----№5---->
+
           <li class="reason">
             <h2 class="reason-title">Мало туристов</h2>
             <div class="reason-number">№5</div>
@@ -90,24 +117,30 @@
       <div class="search">
         <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне</p>
-        <button type="button" class="btn btn--search">Найти гостиницу</button>
+        <a href="#" class="btn btn__search">Найти гостиницу</a>
       </div>
 
       <div class="map"></div>
-
-      <footer class="page-footer">
-        <div class="footer__column">
-          <
-        </div>
-
-        <div class="footer__column">
-
-        </div>
-
-        <div class="footer__column">
-
-        </div>
-      </footer>
     </main>
+
+    <!--Footer-->
+
+    <footer class="page-footer">
+      <div class="page-footer__info">
+        <b class="hashtag">#visitsedona</b>
+      </div>
+      <div class="page-footer__social">
+        <div class="social">
+          <a href="#" class="social__btn social__btn--tw">Twitter</a>
+          <a href="#" class="social__btn social__btn--fb">Facebook</a>
+          <a href="#" class="social__btn social__btn--yt">Youtube</a>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright--text">Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright--link"></a>
+      </div>
+    </footer>
+
   </body>
 </html>
