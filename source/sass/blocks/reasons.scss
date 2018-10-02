@@ -1,0 +1,21 @@
+.reasons__header {
+  background-color: $white;
+}
+
+.reasons__title {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.reasons__description {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-big;
+  color: $gray;
+
+  text-transform: uppercase;
+}
