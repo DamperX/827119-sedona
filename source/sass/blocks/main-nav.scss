@@ -1,0 +1,17 @@
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  background-color: $blue;
+}
+
+.main-nav__link {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-bigger;
+  color: $white;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
