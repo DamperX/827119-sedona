@@ -15,7 +15,33 @@
   font-size: $font-size-small;
   font-weight: 400;
   line-height: $line-height-big;
-  color: $gray;
+  color: $brown;
+
+  text-transform: uppercase;
+}
+
+.reasons__row {
+  list-style-type: none;
+}
+
+.reasons__search {
+  background-color: $white;
+}
+
+.reasons__search-title {
+  font-size: $font-size-big;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.reasons__search-description {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-normal;
+  color: $brown;
 
   text-transform: uppercase;
 }

@@ -1,0 +1,55 @@
+.reason__wrapper {
+  background-color: $gray;
+}
+
+.reason__wrapper--blue {
+  background-color: $blue;
+  color: $white;
+}
+
+.reason__title {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+
+  text-transform: uppercase;
+}
+
+.reason__number {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-small;
+
+  text-transform: uppercase;
+}
+
+.reason__description {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-small;
+
+  text-transform: uppercase;
+}
+
+.reason__attachments {
+  background-color: $white;
+  list-style-type: none;
+}
+
+.reason__item-title {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.reason__item-text {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-small;
+  color: $brown;
+
+  text-transform: uppercase;
+}
