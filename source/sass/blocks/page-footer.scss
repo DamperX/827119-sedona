@@ -1,0 +1,12 @@
+.page-footer {
+  background-color: $gray-light;
+}
+
+.page-footer__hashtag {
+  font-size: $font-size-big;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
