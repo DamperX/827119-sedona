@@ -1,0 +1,27 @@
+.post__image {
+  background-color: $photo-bg;
+}
+
+.post__title {
+  font-size: $font-size-small;
+  font-weight: 700;
+  line-height: $line-height-normal;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.post__author {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-normal;
+  color: $brown;
+}
+
+.post__likes-amount {
+  font-size: $font-size-small;
+  font-weight: 700;
+  line-height: $line-height-normal;
+  color: $black;
+}
+

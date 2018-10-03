@@ -1,0 +1,21 @@
+.gallery__title {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.gallery__description {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-normal;
+  color: $brown;
+
+  text-transform: uppercase;
+}
+
+.gallery__posts {
+  list-style: none;
+}
