@@ -1,4 +1,9 @@
+.feedback__header {
+  margin-bottom: 22px;
+}
+
 .feedback__title {
+  margin: 0;
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
@@ -8,10 +13,16 @@
 }
 
 .feedback__description {
+  margin: 0;
   font-size: $font-size-small;
   font-weight: 400;
   line-height: $line-height-normal;
   color: $gray-dark;
 
   text-transform: uppercase;
+}
+
+.feedback__fieldset {
+  padding-top: 22px;
+  padding-bottom: 25px;
 }
