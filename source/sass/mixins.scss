@@ -19,5 +19,12 @@
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
-  color: $black;
+}
+
+@mixin btn-style() {
+  text-decoration: none;
+
+  border: 0;
+  color: $white;
+  background-color: $blue;
 }
