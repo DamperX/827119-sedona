@@ -1,8 +1,22 @@
+.post {
+  margin-bottom: 20px;
+  padding-top: 22px;
+}
+
+.post__content {
+  margin: 0;
+}
+
 .post__image {
   background-color: $photo-bg;
 }
 
+.post__info {
+  padding-top: 17px;
+}
+
 .post__title {
+  margin: 0;
   font-size: $font-size-small;
   font-weight: 700;
   line-height: $line-height-normal;

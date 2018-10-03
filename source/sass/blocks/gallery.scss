@@ -1,3 +1,11 @@
+.gallery {
+  margin-bottom: 77px;
+}
+
+.gallery__header {
+  margin-bottom: 30px;
+}
+
 .gallery__title {
   font-size: $font-size-normal;
   font-weight: 700;
@@ -8,6 +16,7 @@
 }
 
 .gallery__description {
+  margin: 0;
   font-size: $font-size-small;
   font-weight: 400;
   line-height: $line-height-normal;
@@ -17,5 +26,7 @@
 }
 
 .gallery__posts {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
