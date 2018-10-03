@@ -8,6 +8,7 @@
 }
 
 .reason__title {
+  margin: 0;
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
@@ -24,6 +25,7 @@
 }
 
 .reason__description {
+  margin: 0;
   font-size: $font-size-small;
   font-weight: 400;
   line-height: $line-height-small;
@@ -32,6 +34,9 @@
 }
 
 .reason__attachments {
+  margin: 0;
+  padding: 0;
+
   background-color: $white;
   list-style-type: none;
 }

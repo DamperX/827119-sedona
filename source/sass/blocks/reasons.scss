@@ -1,8 +1,14 @@
+.reasons {
+  margin-bottom: 49px;
+}
+
 .reasons__header {
+  margin-bottom: 32px;
   background-color: $white;
 }
 
 .reasons__title {
+  margin-bottom: 35px;
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
@@ -21,6 +27,10 @@
 }
 
 .reasons__row {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
   list-style-type: none;
 }
 

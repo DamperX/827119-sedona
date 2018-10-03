@@ -3,10 +3,17 @@
 }
 
 .page-footer__hashtag {
+  display: block;
+  margin-bottom: 39px;
+
   font-size: $font-size-big;
   font-weight: 700;
   line-height: $line-height-big;
   color: $black;
 
   text-transform: uppercase;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
 }
