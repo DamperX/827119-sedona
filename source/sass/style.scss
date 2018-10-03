@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -10,3 +11,10 @@
 @import "blocks/gallery.scss";
 @import "blocks/post.scss";
 @import "blocks/video.scss";
+@import "blocks/feedback.scss";
+@import "blocks/fieldset.scss";
+@import "blocks/input-text.scss";
+@import "blocks/input-radio.scss";
+@import "blocks/input-checkboxes.scss";
+@import "blocks/text-field.scss";
+@import "blocks/popup.scss";

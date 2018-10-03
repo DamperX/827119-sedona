@@ -1,0 +1,12 @@
+.input-text__description {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-big;
+  color: $gray-dark;
+
+  text-transform: uppercase;
+}
+
+.input-text__field {
+  @include input-text-style;
+}

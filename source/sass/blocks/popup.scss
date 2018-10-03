@@ -1,4 +1,4 @@
-.gallery__title {
+.popup__title {
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
@@ -7,15 +7,9 @@
   text-transform: uppercase;
 }
 
-.gallery__description {
+.popup__text {
   font-size: $font-size-small;
   font-weight: 400;
   line-height: $line-height-normal;
   color: $gray-dark;
-
-  text-transform: uppercase;
-}
-
-.gallery__posts {
-  list-style: none;
 }

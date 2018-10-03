@@ -1,0 +1,23 @@
+@mixin input-text-style() {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  background-color: $gray-input;
+  border: 0;
+}
+
+@mixin input-radio-style() {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+}
+
+@mixin input-checkbox-style() {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+}
