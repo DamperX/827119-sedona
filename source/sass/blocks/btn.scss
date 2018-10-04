@@ -1,0 +1,8 @@
+.btn {
+  font-size: $font-size-big;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $white;
+
+  @include btn-style;
+}

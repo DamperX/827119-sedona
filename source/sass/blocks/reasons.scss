@@ -1,0 +1,57 @@
+.reasons {
+  margin-bottom: 49px;
+}
+
+.reasons__header {
+  margin-bottom: 32px;
+  background-color: $white;
+}
+
+.reasons__title {
+  margin-bottom: 35px;
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.reasons__description {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-big;
+  color: $gray-dark;
+
+  text-transform: uppercase;
+}
+
+.reasons__row {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  list-style-type: none;
+}
+
+.reasons__search {
+  background-color: $white;
+}
+
+.reasons__search-title {
+  font-size: $font-size-big;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.reasons__search-description {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-normal;
+  color: $gray-dark;
+
+  text-transform: uppercase;
+}

@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
 
     <!--Header-->
 
@@ -28,7 +29,7 @@
           </ul>
         </div>
       </nav>
-      <div class="page-header__logo">
+      <div class="page-header__logo-wrapper">
         <img src="http://placehold.it/150x100" alt="City of Sedona" width="102" height="83">
       </div>
       <div class="intro intro--first-page">
@@ -44,14 +45,16 @@
           <h1 class="reasons__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="reasons__description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </header>
-        <ol class="reason__row">
+        <ol class="reasons__row">
 
           <!----№1---->
 
-          <li class="reason reason--blue">
-            <h2 class="reason__title">Настоящий городок</h2>
-            <span class="reason__number">№1</span>
-            <p class="reason__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+          <li class="reason">
+            <div class="reason__wrapper--blue">
+              <h2 class="reason__title">Настоящий городок</h2>
+              <span class="reason__number">&mdash; №1 &mdash;</span>
+              <p class="reason__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+            </div>
             <div class="reason__picture">
               <img src="http://placehold.it/150x100" alt="Мотель" width="520" height="260">
             </div>
@@ -74,10 +77,12 @@
 
           <!----№2---->
 
-          <li class="reason reason--blue">
-            <h2 class="reason__title">Там есть мост дьявола</h2>
-            <div class="reason__number">№2</div>
-            <p class="reason__description">Да, по нему можно пройти если вы осмелитесь, конечно</p>
+          <li class="reason">
+            <div class="reason__wrapper--blue">
+              <h2 class="reason__title">Там есть мост дьявола</h2>
+              <span class="reason__number">&mdash; №2 &mdash;</span>
+              <p class="reason__description">Да, по нему можно пройти если вы осмелитесь, конечно</p>
+            </div>
             <div class="reason__picture">
               <img src="http://placehold.it/150x100" alt="Мотель" width="520" height="260">
             </div>
@@ -86,54 +91,69 @@
           <!----№3---->
 
           <li class="reason">
-            <h2 class="reason__title">Небольшая площадь</h2>
-            <div class="reason__number">№3</div>
-            <p class="reason__description">Все интересные места находятся очень близко</p>
+            <div class="reason__wrapper">
+              <h2 class="reason__title">Небольшая площадь</h2>
+              <span class="reason__number">&mdash; №3 &mdash;</span>
+              <p class="reason__description">Все интересные места находятся очень близко</p>
+            </div>
           </li>
 
           <!----№4---->
 
           <li class="reason">
-            <h2 class="reason__title">Красивая дорога</h2>
-            <div class="reason__number">№4</div>
-            <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="reason__wrapper">
+              <h2 class="reason__title">Красивая дорога</h2>
+              <span class="reason__number">&mdash; №4 &mdash;</span>
+              <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
 
           <!----№5---->
 
           <li class="reason">
-            <h2 class="reason__title">Мало туристов</h2>
-            <div class="reason__number">№5</div>
-            <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
+            <div class="reason__wrapper">
+              <h2 class="reason__title">Мало туристов</h2>
+              <span class="reason__number">&mdash; №5 &mdash;</span>
+              <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
+            </div>
           </li>
         </ol>
+        <div class="reasons__search">
+          <h2 class="reasons__search-title">Заинтересовались?</h2>
+          <p class="reasons__search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a href="#" class="btn reasons__search-btn">Найти гостиницу</a>
+        </div>
       </article>
-
-      <div class="search">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне</p>
-        <a href="#" class="btn btn__search">Найти гостиницу</a>
-      </div>
-
       <div class="map"></div>
     </main>
 
     <!--Footer-->
 
     <footer class="page-footer">
-      <div class="page-footer__info">
-        <b class="hashtag">#visitsedona</b>
-      </div>
-      <div class="page-footer__social">
-        <div class="social">
-          <a href="#" class="social__btn social__btn--tw">Twitter</a>
-          <a href="#" class="social__btn social__btn--fb">Facebook</a>
-          <a href="#" class="social__btn social__btn--yt">Youtube</a>
+      <div class="page-footer__wrapper">
+        <b class="page-footer__hashtag">#visitsedona</b>
+        <div class="page-footer__social">
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__btn social__btn--tw">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__btn social__btn--fb">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__btn social__btn--yt">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright--text">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright--link"></a>
+        <div class="page-footer__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">Разработано</a>
+        </div>
       </div>
     </footer>
 

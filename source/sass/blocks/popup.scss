@@ -1,0 +1,15 @@
+.popup__title {
+  font-size: $font-size-normal;
+  font-weight: 700;
+  line-height: $line-height-big;
+  color: $black;
+
+  text-transform: uppercase;
+}
+
+.popup__text {
+  font-size: $font-size-small;
+  font-weight: 400;
+  line-height: $line-height-normal;
+  color: $gray-dark;
+}
