@@ -1,7 +1,35 @@
 .page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 42px;
 }
 
 .page-header__logo-wrapper {
+  width: 100%;
+  height: 56px;
+
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+
+    width: auto;
+    height: auto;
+
+    transform: translateX(-50%);
+  }
+}
+
+.page-header__logo {
+  display: block;
+  width: 102px;
+  height: 83px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
+  }
 }

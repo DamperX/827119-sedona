@@ -1,10 +1,8 @@
-.reasons {
-  margin-bottom: 49px;
-}
-
 .reasons__header {
   margin-bottom: 32px;
   background-color: $white;
+
+  text-align: center;
 }
 
 .reasons__title {
@@ -32,10 +30,21 @@
   margin-bottom: 30px;
 
   list-style-type: none;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 52px;
+  }
 }
 
 .reasons__search {
   background-color: $white;
+
+  text-align: center;
 }
 
 .reasons__search-title {
