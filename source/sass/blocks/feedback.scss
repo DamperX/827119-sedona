@@ -4,12 +4,12 @@
   padding-right: $mobile-indent;
 
   @media (min-width: $tablet-width) {
-    padding-left: $tablet-indent;;
+    padding-left: $tablet-indent;
     padding-right: $tablet-indent;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: $desktop-indent;;
+    padding-left: $desktop-indent;
     padding-right: $desktop-indent;
   }
 }
@@ -94,7 +94,3 @@
     flex-basis: 100%;
   }
 }
-
-
-
-
