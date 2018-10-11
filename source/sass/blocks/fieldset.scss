@@ -1,12 +1,19 @@
 .fieldset {
+  display: flex;
+  margin-right: 0;
+  margin-left: 0;
   border: 0;
 }
 
 .fieldset__title {
+  display: flex;
+  width: 100%;
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
   color: $black;
+
+  text-align: center;
 
   text-transform: uppercase;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
@@ -31,11 +32,11 @@
       </nav>
       <div class="page-header__logo-wrapper">
         <a href="index.html" class="page-header__logo-link">
-          <img src="http://placehold.it/150x100" alt="City of Sedona" width="102" height="83">
+          <img class="page-header__logo" src="http://placehold.it/150x100" alt="City of Sedona">
         </a>
       </div>
       <div class="intro">
-        <img src="http://placehold.it/150x100" alt="Sedona" class="intro-banner" width="282" height="214">
+        <img class="intro__image" src="http://placehold.it/150x100" alt="Sedona" class="intro-banner">
       </div>
     </header>
 
@@ -97,11 +98,11 @@
             </label>
             <label class="input_check fieldset__input fieldset__input--checkbox">
               <input class="input-check__btn visually-hidden" type="checkbox" name="bell-mountain" checked>
-              <span class="input-check__description"></span>
+              <span class="input-check__description">Гора-Колокол</span>
             </label>
             <label class="input_check fieldset__input fieldset__input--checkbox">
               <input class="input-check__btn visually-hidden" type="checkbox" name="slide-park" checked>
-              <span class="input-check__description"></span>
+              <span class="input-check__description">Слайд-парк</span>
             </label>
             <label class="input_check fieldset__input fieldset__input--checkbox">
               <input class="input-check__btn visually-hidden" type="checkbox" name="Red-rocks">
@@ -112,7 +113,7 @@
             <legend class="fieldset__title">Опишите свои эмоции:</legend>
             <textarea class="text-field" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <div class="feedback__btn--container">
+          <div class="feedback__btn-container">
             <button class="btn feedback__btn" type="submit">Отправить отзыв</button>
           </div>
         </form>
