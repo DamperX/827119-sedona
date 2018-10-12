@@ -1,5 +1,4 @@
 .feedback {
-
   padding-left: $mobile-indent;
   padding-right: $mobile-indent;
 
@@ -54,6 +53,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+.feedback__note {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 100;
   }
 }
 

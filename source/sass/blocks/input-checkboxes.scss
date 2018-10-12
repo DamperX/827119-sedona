@@ -1,3 +1,7 @@
+.input-check {
+  display: block;
+}
+
 .input-check__description {
   @include input-checkbox-style;
 }
