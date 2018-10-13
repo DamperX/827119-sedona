@@ -1,7 +1,23 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+
   padding: 0;
   margin: 0;
+
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .main-nav__item {

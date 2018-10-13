@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
@@ -31,11 +32,11 @@
       </nav>
       <div class="page-header__logo-wrapper">
         <a href="index.html" class="page-header__logo-link">
-          <img src="http://placehold.it/150x100" alt="City of Sedona" width="102" height="83">
+          <img class="page-header__logo" src="http://placehold.it/150x100" alt="City of Sedona">
         </a>
       </div>
       <div class="intro">
-        <img src="http://placehold.it/150x100" alt="Sedona" class="intro-banner" width="282" height="214">
+        <img class="intro__image" src="http://placehold.it/150x100" alt="Sedona" class="intro-banner">
       </div>
     </header>
 
@@ -65,14 +66,16 @@
           </fieldset>
           <fieldset class="fieldset feedback__fieldset feedback__fieldset--contacts">
             <legend class="fieldset__title">Контактная информация</legend>
-            <label class="input-text fieldset__input fieldset__input--contacts">
-              <span class="input-text__description">Контактный телефон*:</span>
-              <input class="input-text__field input-text__field--icon input-text__field--tel" type="tel" name="phone" placeholder="Введите телефон" required>
-            </label>
-            <label class="input-text fieldset__input fieldset__input--contacts">
-              <span class="input-text__description">Электронная почта*:</span>
-              <input class="input-text__field input-text__field--icon input-text__field--email" type="email" name="email" placeholder="Введите e-mail" required>
-            </label>
+            <div class="fieldset__text-wrapper">
+              <label class="input-text input-text--full fieldset__input fieldset__input--contacts">
+                <span class="input-text__description">Контактный телефон*:</span>
+                <input class="input-text__field input-text__field--icon input-text__field--tel" type="tel" name="phone" placeholder="Введите телефон" required>
+              </label>
+              <label class="input-text input-text--full fieldset__input fieldset__input--contacts">
+                <span class="input-text__description">Электронная почта*:</span>
+                <input class="input-text__field input-text__field--icon input-text__field--email" type="email" name="email" placeholder="Введите e-mail" required>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="fieldset feedback__fieldset feedback__fieldset--impression">
             <legend class="fieldset__title">Ваше общее впечатление:</legend>
@@ -91,30 +94,33 @@
           </fieldset>
           <fieldset class="fieldset feedback__fieldset feedback__fieldset--attraction">
             <legend class="fieldset__title">Посещенные достопримечательности:</legend>
-            <label class="input_check fieldset__input fieldset__input--checkbox">
-              <input class="input-check__btn visually-hidden" type="checkbox" name="devils-brige" checked>
-              <span class="input-check__description">Мост Дьявола</span>
-            </label>
-            <label class="input_check fieldset__input fieldset__input--checkbox">
-              <input class="input-check__btn visually-hidden" type="checkbox" name="bell-mountain" checked>
-              <span class="input-check__description"></span>
-            </label>
-            <label class="input_check fieldset__input fieldset__input--checkbox">
-              <input class="input-check__btn visually-hidden" type="checkbox" name="slide-park" checked>
-              <span class="input-check__description"></span>
-            </label>
-            <label class="input_check fieldset__input fieldset__input--checkbox">
-              <input class="input-check__btn visually-hidden" type="checkbox" name="Red-rocks">
-              <span class="input-check__description">Красные скалы</span>
-            </label>
+            <div class="fieldset__checkbox-wrapper">
+              <label class="input-check fieldset__input fieldset__input--checkbox">
+                <input class="input-check__btn visually-hidden" type="checkbox" name="devils-brige" checked>
+                <span class="input-check__description">Мост Дьявола</span>
+              </label>
+              <label class="input-check fieldset__input fieldset__input--checkbox">
+                <input class="input-check__btn visually-hidden" type="checkbox" name="bell-mountain" checked>
+                <span class="input-check__description">Гора-Колокол</span>
+              </label>
+              <label class="input-check fieldset__input fieldset__input--checkbox">
+                <input class="input-check__btn visually-hidden" type="checkbox" name="slide-park" checked>
+                <span class="input-check__description">Слайд-парк</span>
+              </label>
+              <label class="input-check fieldset__input fieldset__input--checkbox">
+                <input class="input-check__btn visually-hidden" type="checkbox" name="Red-rocks">
+                <span class="input-check__description">Красные скалы</span>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="fieldset feedback__fieldset feedback__fieldset--emotions">
             <legend class="fieldset__title">Опишите свои эмоции:</legend>
             <textarea class="text-field" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <div class="feedback__btn--container">
+          <div class="feedback__btn-container">
             <button class="btn feedback__btn" type="submit">Отправить отзыв</button>
           </div>
+          <span class="feedback__note">* - обязательные поля</span>
         </form>
 
         <!----Popup---->

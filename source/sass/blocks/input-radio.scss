@@ -1,3 +1,7 @@
+.input-radio {
+  display: block;
+}
+
 .input-radio__description {
   @include input-radio-style;
 }

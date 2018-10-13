@@ -2,6 +2,15 @@
   background-color: $gray-light;
 }
 
+.page-footer__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__hashtag {
   display: block;
   margin-bottom: 39px;

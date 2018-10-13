@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -30,10 +32,10 @@
         </div>
       </nav>
       <div class="page-header__logo-wrapper">
-        <img src="http://placehold.it/150x100" alt="City of Sedona" width="102" height="83">
+        <img class="page-header__logo" src="http://placehold.it/150x100" alt="City of Sedona">
       </div>
       <div class="intro intro--first-page">
-        <img src="http://placehold.it/150x100" alt="Sedona" class="intro-banner" width="282" height="214">
+        <img class="intro__image" src="http://placehold.it/150x100" alt="Sedona" class="intro-banner">
       </div>
     </header>
 
@@ -49,14 +51,14 @@
 
           <!----№1---->
 
-          <li class="reason">
-            <div class="reason__wrapper--blue">
+          <li class="reason reason--blue">
+            <div class="reason__wrapper">
               <h2 class="reason__title">Настоящий городок</h2>
               <span class="reason__number">&mdash; №1 &mdash;</span>
               <p class="reason__description">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reason__picture">
-              <img src="http://placehold.it/150x100" alt="Мотель" width="520" height="260">
+              <img src="http://placehold.it/150x100" alt="Мотель">
             </div>
             <h2 class="visually-hidden">Особенности городка</h2>
             <ul class="reason__attachments">
@@ -77,20 +79,20 @@
 
           <!----№2---->
 
-          <li class="reason">
-            <div class="reason__wrapper--blue">
+          <li class="reason reason--blue">
+            <div class="reason__wrapper">
               <h2 class="reason__title">Там есть мост дьявола</h2>
               <span class="reason__number">&mdash; №2 &mdash;</span>
               <p class="reason__description">Да, по нему можно пройти если вы осмелитесь, конечно</p>
             </div>
             <div class="reason__picture">
-              <img src="http://placehold.it/150x100" alt="Мотель" width="520" height="260">
+              <img src="http://placehold.it/150x100" alt="Мотель">
             </div>
           </li>
 
           <!----№3---->
 
-          <li class="reason">
+          <li class="reason reason--gray">
             <div class="reason__wrapper">
               <h2 class="reason__title">Небольшая площадь</h2>
               <span class="reason__number">&mdash; №3 &mdash;</span>
@@ -100,7 +102,7 @@
 
           <!----№4---->
 
-          <li class="reason">
+          <li class="reason reason--gray">
             <div class="reason__wrapper">
               <h2 class="reason__title">Красивая дорога</h2>
               <span class="reason__number">&mdash; №4 &mdash;</span>
@@ -110,7 +112,7 @@
 
           <!----№5---->
 
-          <li class="reason">
+          <li class="reason reason--gray">
             <div class="reason__wrapper">
               <h2 class="reason__title">Мало туристов</h2>
               <span class="reason__number">&mdash; №5 &mdash;</span>

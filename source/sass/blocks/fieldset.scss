@@ -1,12 +1,17 @@
 .fieldset {
+  margin-right: 0;
+  margin-left: 0;
   border: 0;
 }
 
 .fieldset__title {
+  width: 100%;
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
   color: $black;
+
+  text-align: center;
 
   text-transform: uppercase;
 }
@@ -18,4 +23,33 @@
   color: $gray-dark;
 
   text-transform: uppercase;
+}
+
+.fieldset__text-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.fieldset__checkbox-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.fieldset__input--checkbox {
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
@@ -31,11 +32,11 @@
       </nav>
       <div class="page-header__logo-wrapper">
         <a href="index.html" class="page-header__logo-link">
-          <img src="http://placehold.it/150x100" alt="City of Sedona" width="102" height="83">
+          <img class="page-header__logo" src="http://placehold.it/150x100" alt="City of Sedona">
         </a>
       </div>
       <div class="intro">
-        <img src="http://placehold.it/150x100" alt="Sedona" class="intro-banner" width="282" height="214">
+        <img class="intro__image" src="http://placehold.it/150x100" alt="Sedona" class="intro-banner">
       </div>
     </header>
 
@@ -47,7 +48,7 @@
           <h1 class="gallery__title">Фото и видео</h1>
           <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
-        <ul class="gallery__posts">
+        <ul class="post-list gallery__posts">
           <li class="post">
             <figure class="post__content">
               <a href="#" class="post__photo">
@@ -56,7 +57,7 @@
               <figcaption class="post__info">
                 <div class="post__description">
                   <h2 class="post__title">Неродные просторы</h2>
-                  <span class="post__author">Автор фото: Борис</span>
+                  <p class="post__author">Автор фото: Борис</p>
                 </div>
                 <div class="post__likes">
                   <span class="post__likes-amount">
@@ -74,7 +75,7 @@
               <figcaption class="post__info">
                 <div class="post__description">
                   <h2 class="post__title">Местная растительность</h2>
-                  <span class="post__author">Автор фото: Сергей</span>
+                  <p class="post__author">Автор фото: Сергей</p>
                 </div>
                 <div class="post__likes">
                   <span class="post__likes-amount">
@@ -92,7 +93,7 @@
               <figcaption class="post__info">
                 <div class="post__description">
                   <h2 class="post__title">Дорога на север</h2>
-                  <span class="post__author">Автор фото: Петр</span>
+                  <p class="post__author">Автор фото: Петр</p>
                 </div>
                 <div class="post__likes">
                   <span class="post__likes-amount">
@@ -110,7 +111,7 @@
               <figcaption class="post__info">
                 <div class="post__description">
                   <h2 class="post__title">Мост дьявола</h2>
-                  <span class="post__author">Автор фото: Антон</span>
+                  <p class="post__author">Автор фото: Антон</p>
                 </div>
                 <div class="post__likes">
                   <span class="post__likes-amount">
@@ -121,11 +122,11 @@
             </figure>
           </li>
         </ul>
-        <div class="gallery__visit">
+        <div class="gallery__header gallery__header--video">
           <h2 class="gallery__title">Все ешё сомневаетесь?</h2>
           <p class="gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <article class="video gallery-vidio">
+        <article class="video gallery-video">
           <h3 class="visually-hidden">Видео-презентация Седоны</h3>
           <img class="video__file" src="http://placehold.it/150x100" alt="Видео-презентация Седоны">
         </article>

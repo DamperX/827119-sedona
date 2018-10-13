@@ -1,3 +1,25 @@
+.input-text {
+  display: flex;
+  width: 100%;
+}
+
+.input-text--full {
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: no-wrap;
+    width: auto;
+  }
+}
+
+.input-text--full .input-text__description {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
 .input-text__description {
   font-size: $font-size-small;
   font-weight: 400;
