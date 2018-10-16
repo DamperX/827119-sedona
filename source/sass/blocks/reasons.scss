@@ -126,6 +126,10 @@
     margin: 0 auto;
     margin-bottom: 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .reasons__search-btn {

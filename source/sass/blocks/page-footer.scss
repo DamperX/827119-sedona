@@ -12,10 +12,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: center;
     padding: 0 $tablet-indent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $desktop-indent;
   }
 }
 
