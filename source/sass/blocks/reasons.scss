@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 50px;
   }
 }
 
@@ -80,7 +80,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 }
 
@@ -104,6 +104,11 @@
   color: $black;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    font-size: $font-size-bigger;
+  }
 }
 
 .reasons__search-description {
@@ -115,6 +120,12 @@
   color: $gray-dark;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
 }
 
 .reasons__search-btn {

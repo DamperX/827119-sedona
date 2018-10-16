@@ -8,4 +8,8 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 518px; /* Временно */
+  }
 }

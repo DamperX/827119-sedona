@@ -9,11 +9,13 @@
 }
 
 .page-footer__wrapper {
-  text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 $tablet-indent;
   }
 }
 
@@ -27,12 +29,25 @@
   color: $black;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    flex: 0 0 30%;
+  }
 }
 
 .page-footer__social {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    flex: 0 0 40%;
+  }
 }
 
 .page-footer__copyright {
-
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    flex: 0 0 30%;
+  }
 }
