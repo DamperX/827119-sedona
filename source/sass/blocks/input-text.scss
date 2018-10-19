@@ -1,5 +1,6 @@
 .input-text {
   display: flex;
+  align-items: baseline;
   width: 100%;
 }
 
@@ -13,7 +14,6 @@
 }
 
 .input-text--full .input-text__description {
-  width: 100%;
 
   @media (min-width: $desktop-width) {
     width: auto;
@@ -30,5 +30,7 @@
 }
 
 .input-text__field {
+  width: 100%;
+
   @include input-text-style;
 }

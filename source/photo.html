@@ -11,15 +11,15 @@
     <!----Header---->
 
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть</button>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Фото и видео</a>
+              <a href="#" class="main-nav__link main-nav__link--current">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html" class="main-nav__link">Форма отзыва</a>
@@ -36,7 +36,7 @@
         </a>
       </div>
       <div class="intro">
-        <img class="intro__image" src="http://placehold.it/150x100" alt="Sedona" class="intro-banner">
+        <img class="intro__image intro-banner" src="http://placehold.it/150x100" alt="Sedona" height="156">
       </div>
     </header>
 
@@ -52,7 +52,7 @@
           <li class="post">
             <figure class="post__content">
               <a href="#" class="post__photo">
-                <img class="post__image" src="http://placehold.it/150x100" alt="Неродные просторы">
+                <img class="post__image img__first" src="http://placehold.it/150x100" alt="Неродные просторы" height="280">
               </a>
               <figcaption class="post__info">
                 <div class="post__description">
@@ -70,7 +70,7 @@
           <li class="post">
             <figure class="post__content">
               <a href="#" class="post__photo">
-                <img class="post__image" src="http://placehold.it/150x100" alt="Местная растительность">
+                <img class="post__image" src="http://placehold.it/150x100" alt="Местная растительность" height="280">
               </a>
               <figcaption class="post__info">
                 <div class="post__description">
@@ -88,7 +88,7 @@
           <li class="post">
             <figure class="post__content">
               <a href="#" class="post__photo">
-                <img class="post__image" src="http://placehold.it/150x100" alt="Дорога на север">
+                <img class="post__image" src="http://placehold.it/150x100" alt="Дорога на север" height="280">
               </a>
               <figcaption class="post__info">
                 <div class="post__description">
@@ -106,7 +106,7 @@
           <li class="post">
             <figure class="post__content">
               <a href="#" class="post__photo">
-                <img class="post__image" src="http://placehold.it/150x100" alt="Мост дьявола">
+                <img class="post__image" src="http://placehold.it/150x100" alt="Мост дьявола" height="280">
               </a>
               <figcaption class="post__info">
                 <div class="post__description">
@@ -128,7 +128,23 @@
         </div>
         <article class="video gallery-video">
           <h3 class="visually-hidden">Видео-презентация Седоны</h3>
-          <img class="video__file" src="http://placehold.it/150x100" alt="Видео-презентация Седоны">
+          <img class="video__file" src="http://placehold.it/150x100" alt="Видео-презентация Седоны" height="202">
+          <div class="video__player">
+            <div class="video__control video__control--bar">
+              <div class="video__range">
+                <button type="button" class="video__roll"></button>
+              </div>
+            </div>
+            <div class="video__control">
+              <button type="button" class="video__btn"></button>
+            </div>
+            <div class="video__control">
+              <button type="button" class="video__btn"></button>
+            </div>
+            <div class="video__control">
+              <button type="button" class="video__btn"></button>
+            </div>
+          </div>
         </article>
       </section>
     </main>
@@ -158,10 +174,28 @@
           </ul>
         </div>
         <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">Разработано</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">
+            Разработано
+            <img class="academy__img" src="http://placehold.it/150x100" alt="HTML Academy" width="24" height="34"> <!--Временно-->
+          </a>
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
 
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -99,9 +99,12 @@
   line-height: $line-height-small;
 
   text-transform: uppercase;
+}
 
-  @media (min-width: $tablet-width) {
-
+.reason:nth-child(2) .reason__description {
+  @media (min-width: $desktop-width) {
+    max-width: 236px;
+    margin: 0 auto;
   }
 }
 

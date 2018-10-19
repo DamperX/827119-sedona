@@ -1,6 +1,5 @@
 .intro {
   width: 100%;
-
   background-color: $blue;
 }
 
@@ -9,6 +8,16 @@
   width: 100%;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    height: 290px; /* Временно */
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 302px;
+  }
+}
+
+.intro--first-page .intro__image {
   @media (min-width: $tablet-width) {
     height: 518px; /* Временно */
   }

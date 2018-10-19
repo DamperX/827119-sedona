@@ -21,4 +21,12 @@
   color: $white;
   border: 0;
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-darker;
+  }
+
+  &:active {
+    background-color: $blue-darkest;
+  }
 }

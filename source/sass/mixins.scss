@@ -27,4 +27,13 @@
   border: 0;
   color: $white;
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-darker;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, .3);
+    background-color: $blue-darkest;
+  }
 }

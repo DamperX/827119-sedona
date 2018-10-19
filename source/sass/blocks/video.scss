@@ -1,4 +1,90 @@
 .video__file {
   width: 100%;
   background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    height: 499px; /* Временно */
+  }
+}
+
+.video__player {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: -50px;
+  padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: $mobile-indent;
+    padding-right: $mobile-indent;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-top: -97px;
+  }
+}
+
+.video__control {
+  background-color: $gray-input;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba(0, 0, 0, .6);
+
+    &:nth-child(2) {
+      order: -1;
+    }
+  }
+}
+
+.video__control--bar {
+  width: 100%;
+  margin-left: 0;
+  padding: 22px 22px 20px;
+
+  background-color: rgba(0, 0, 0, .6);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.video__range {
+  position: relative;
+  height: 3px;
+  margin: 0 auto;
+
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.video__roll {
+  position: absolute;
+  top: -3px;
+  left: 15%;
+
+  width: 9px;
+  height: 9px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+.video__btn {
+  width: 63px;
+  height: 65px;
+  padding: 0;
+  cursor: pointer;
+
+  border: 0;
+
+  background-color: transparent;
 }
