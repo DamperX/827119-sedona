@@ -1,4 +1,5 @@
 @mixin input-text-style() {
+  font-family: $font-page;
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
@@ -6,6 +7,10 @@
 
   background-color: $gray-input;
   border: 0;
+
+  &::placeholder {
+    color: inherit;
+  }
 }
 
 @mixin input-radio-style() {

@@ -2,18 +2,25 @@
   margin-right: 0;
   margin-left: 0;
   border: 0;
-  padding: 0;
+
+  border-top: 1px solid $gray-input;
 
   @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $gray-input;
     padding-left: $mobile-indent;
     padding-right: $mobile-indent;
-    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+
   }
 }
 
 .fieldset__title {
+  float: left;
   width: 100%;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   font-size: $font-size-normal;
   font-weight: 700;
@@ -23,6 +30,20 @@
   text-align: center;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    float: none;
+    margin: 0;
+    font-size: $font-size-big;
+  }
+}
+
+.fieldset__title + * {
+  clear: both;
+}
+
+.fieldset--near .fieldset__title {
+  text-align: left;
 }
 
 .fieldset__description {
@@ -45,20 +66,84 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    width: calc(100% - 185px);
+    max-width: 650px;
+    margin: 0 auto;
   }
 }
+
+.fieldset__input {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    @media (max-width: $mobile-width-only) {
+      margin: 0;
+    }
+  }
+}
+
+.fieldset__input--contacts {
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+.fieldset__input--radio {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+}
+
 
 .fieldset__input--checkbox {
   @media (min-width: $tablet-width) {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 50%;
+    flex-basis: 44%;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
+  }
+}
+
+.fieldset__title-line {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items:center;
+    max-width: 100%;
+
+    &::after,
+    &::before {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 15%;
+      height: 1px;
+      background-color: $gray-line;
+   }
+
+   &::after {
+    margin-left: 65px;
+   }
+
+   &::before {
+    margin-right: 65px;
+   }
   }
 }
