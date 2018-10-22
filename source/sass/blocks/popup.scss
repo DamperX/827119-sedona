@@ -17,6 +17,12 @@
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+    padding: 0;
+    padding-top: 55px;
+  }
 }
 
 .popup__title {
@@ -29,6 +35,10 @@
   color: $black;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-bigger;
+  }
 }
 
 .popup__text {
@@ -60,6 +70,26 @@
 
   box-sizing: border-box;
   background-color: $gray-input;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    padding: 45px 92px;
+  }
+}
+
+.popup--fail {
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.popup--fail .popup__heading {
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .popup__hidden {
