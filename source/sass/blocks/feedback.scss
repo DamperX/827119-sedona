@@ -1,5 +1,6 @@
 .feedback {
   margin-bottom: 73px;
+
   @media (min-width: $tablet-width) {
     padding-left: $tablet-indent;
     padding-right: $tablet-indent;
@@ -140,6 +141,7 @@
 
 .feedback__fieldset--impression {
   position: relative;
+
   @media (min-width: $tablet-width) {
     padding-top: 57px;
     order: -1;
@@ -169,6 +171,7 @@
 .feedback__btn-container {
   margin-top: 15px;
   margin-bottom: 15px;
+
   @media (max-width: $mobile-width-only) {
     padding-left: $mobile-indent;
     padding-right: $mobile-indent;

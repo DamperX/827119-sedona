@@ -19,6 +19,7 @@
 .input-text--full .input-text__description {
   width: 100%;
   padding-left: 21px;
+
   @media (min-width: $desktop-width) {
     flex-grow: 0;
     flex-shrink: 0;
@@ -47,6 +48,7 @@
   width: 100%;
   margin-left: 13px;
   padding: 16px 22px;
+
   @include input-text-style;
 }
 

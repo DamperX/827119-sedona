@@ -42,18 +42,17 @@
 }
 
 .input-check__description:active {
-
-  &::before{
+  &::before {
     background-color: $gray-darker;
   }
 
   &::after {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
 .input-check__btn:checked + .input-check__description::after {
-    background-image: url(../img/icon-tick.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

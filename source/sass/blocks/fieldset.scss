@@ -35,10 +35,6 @@
     margin: 0;
     font-size: $font-size-big;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .fieldset__title + * {
@@ -149,10 +145,9 @@
 }
 
 .fieldset__title-line {
-
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items:center;
+    align-items: center;
     max-width: 100%;
 
     &::after,
@@ -163,14 +158,14 @@
       flex-basis: 15%;
       height: 1px;
       background-color: $gray-line;
-   }
+    }
 
-   &::after {
-    margin-left: 65px;
-   }
+    &::after {
+      margin-left: 65px;
+    }
 
-   &::before {
-    margin-right: 65px;
-   }
+    &::before {
+      margin-right: 65px;
+    }
   }
 }
