@@ -9,6 +9,24 @@
   list-style-type: none;
 }
 
+.social__item {
+  margin: 0 3px;
+}
+
 .social__btn {
+  display: block;
+  width: 46px;
+  height: 48px;
+  cursor: pointer;
+  color: $white;
+  border: 0;
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-darker;
+  }
+
+  &:active {
+    background-color: $blue-darkest;
+  }
 }

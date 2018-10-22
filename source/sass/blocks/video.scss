@@ -1,4 +1,139 @@
+.video {
+  position: relative;
+
+  max-width: 850px;
+}
+
 .video__file {
   width: 100%;
   background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    height: 499px; /* Временно */
+  }
+}
+
+.video__wrapper {
+  @media (max-width: $mobile-width-only) {
+    padding-left: $mobile-indent;
+    padding-right: $mobile-indent;
+  }
+}
+
+.video__player {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-top: -50px;
+  padding: 0;
+
+  background-image: linear-gradient(rgba(#000000, 0.6) 0, rgba(#000000, 0.6) 45px, $gray-input 45px);
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-top: -97px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: none;
+  }
+}
+
+.video:hover .video__player {
+  @media (min-width: $tablet-width) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.video__control {
+  line-height: 0;
+
+  &:nth-child(3) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      order: -1;
+    }
+  }
+}
+
+.video__control--btn {
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
+}
+
+.video__control--btn:first-of-type {
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
+}
+
+.video__control--btn:last-of-type {
+  @media (min-width: $tablet-width) {
+    padding-right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 18px;
+  }
+}
+
+.video__control--bar {
+  width: 100%;
+  margin-left: 0;
+  padding: 22px 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.video__range {
+  position: relative;
+  height: 3px;
+  margin: 0 auto;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__roll {
+  position: absolute;
+  top: -3px;
+  left: 15%;
+
+  width: 9px;
+  height: 9px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    left: 29%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 20%;
+  }
+}
+
+.video__btn {
+  width: 63px;
+  height: 65px;
+  padding: 0;
+  cursor: pointer;
+
+  border: 0;
+  background-color: transparent;
 }

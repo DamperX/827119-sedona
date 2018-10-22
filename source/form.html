@@ -11,18 +11,18 @@
     <!----Header---->
 
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть</button>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="photo.html" class="main-nav__link">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Форма отзыва</a>
+              <a href="#" class="main-nav__link main-nav__link--current">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">Html academy</a>
@@ -36,7 +36,7 @@
         </a>
       </div>
       <div class="intro">
-        <img class="intro__image" src="http://placehold.it/150x100" alt="Sedona" class="intro-banner">
+        <img class="intro__image intro-banner" src="http://placehold.it/150x100" alt="Sedona" height="156">
       </div>
     </header>
 
@@ -49,8 +49,8 @@
           <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form action="https://echo.htmlacademy.ru" class="feedback__form" method="get">
-          <fieldset class="fieldset feedback__fieldset feedback__fieldset--introduce">
-            <legend class="fieldset__title">Представьтесь</legend>
+          <fieldset class="fieldset feedback__fieldset fieldset--near feedback__fieldset--introduce">
+            <legend class="fieldset__title">Представьтесь:</legend>
             <label class="input-text fieldset__input">
               <span class="input-text__description">Имя*:</span>
               <input class="input-text__field" type="text" name="name" placeholder="Петр" required>
@@ -65,10 +65,10 @@
             </label>
           </fieldset>
           <fieldset class="fieldset feedback__fieldset feedback__fieldset--contacts">
-            <legend class="fieldset__title">Контактная информация</legend>
+            <legend class="fieldset__title"><span class="fieldset__title-line">Контактная информация:</span></legend>
             <div class="fieldset__text-wrapper">
               <label class="input-text input-text--full fieldset__input fieldset__input--contacts">
-                <span class="input-text__description">Контактный телефон*:</span>
+                <span class="input-text__description"><span class="input-text__hidden">Контактный</span> телефон*:</span>
                 <input class="input-text__field input-text__field--icon input-text__field--tel" type="tel" name="phone" placeholder="Введите телефон" required>
               </label>
               <label class="input-text input-text--full fieldset__input fieldset__input--contacts">
@@ -77,8 +77,8 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="fieldset feedback__fieldset feedback__fieldset--impression">
-            <legend class="fieldset__title">Ваше общее впечатление:</legend>
+          <fieldset class="fieldset feedback__fieldset fieldset--near feedback__fieldset--impression">
+            <legend class="fieldset__title fieldset__title--left">Ваше общее впечатление:</legend>
             <label class="input-radio fieldset__input fieldset__input--radio">
               <input class="input-radio__btn visually-hidden" type="radio" name="impression" value="positive" checked>
               <span class="input-radio__description">Скорее положительное</span>
@@ -93,7 +93,7 @@
             </label>
           </fieldset>
           <fieldset class="fieldset feedback__fieldset feedback__fieldset--attraction">
-            <legend class="fieldset__title">Посещенные достопримечательности:</legend>
+            <legend class="fieldset__title"><span class="fieldset__title-line">Посещенные<br> достопримечательности:</span></legend>
             <div class="fieldset__checkbox-wrapper">
               <label class="input-check fieldset__input fieldset__input--checkbox">
                 <input class="input-check__btn visually-hidden" type="checkbox" name="devils-brige" checked>
@@ -114,31 +114,14 @@
             </div>
           </fieldset>
           <fieldset class="fieldset feedback__fieldset feedback__fieldset--emotions">
-            <legend class="fieldset__title">Опишите свои эмоции:</legend>
+            <legend class="fieldset__title"><span class="fieldset__title-line">Опишите свои эмоции:</span></legend>
             <textarea class="text-field" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="feedback__btn-container">
             <button class="btn feedback__btn" type="submit">Отправить отзыв</button>
           </div>
-          <span class="feedback__note">* - обязательные поля</span>
+          <span class="feedback__note">* &ndash; обязательные поля</span>
         </form>
-
-        <!----Popup---->
-
-        <section class="popup popup--fail popup--hidden">
-          <div class="popup__description">
-            <h2 class="popup__title">Что-то пошло не так!</h2>
-            <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          </div>
-          <button class="btn btn--popup" type="button">Ок</button>
-        </section>
-        <section class="popup popup--succsess popup--hidden">
-          <div class="popup__description">
-            <h2 class="popup__title">Ваш отзыв отправлен!</h2>
-            <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          </div>
-          <button class="btn btn--popup" type="button">Закрыть окно</button>
-        </section>
       </section>
     </main>
 
@@ -167,10 +150,36 @@
           </ul>
         </div>
         <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">Разработано</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">
+            Разработано
+            <img class="academy__img" src="http://placehold.it/150x100" alt="HTML Academy" width="24" height="34"> <!--Временно-->
+          </a>
         </div>
       </div>
     </footer>
 
+    <!----Popup---->
+
+    <section class="popup popup--fail popup--hidden">
+      <div class="popup__description">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="popup__btn-wrapper">
+        <button class="btn btn--popup" type="button">Ок</button>
+      </div>
+    </section>
+    <section class="popup popup--succsess popup--hidden">
+      <div class="popup__description">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="popup__btn-wrapper popup__btn-wrapper--gray">
+        <button class="btn btn--popup" type="button">Закрыть окно</button>
+      </div>
+    </section>
+
+    <script src="js/page-header.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

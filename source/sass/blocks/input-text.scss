@@ -1,5 +1,6 @@
 .input-text {
   display: flex;
+  align-items: baseline;
   width: 100%;
 }
 
@@ -7,17 +8,31 @@
   flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
-    flex-wrap: no-wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
     width: auto;
   }
 }
 
 .input-text--full .input-text__description {
   width: 100%;
+  padding-left: 21px;
 
   @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
     width: auto;
+    padding-right: 15px;
+    padding-left: 0;
   }
+}
+
+.input-text--full .input-text__field {
+  margin-top: 8px;
+  margin-left: 0;
 }
 
 .input-text__description {
@@ -30,5 +45,15 @@
 }
 
 .input-text__field {
+  width: 100%;
+  margin-left: 13px;
+  padding: 16px 22px;
+
   @include input-text-style;
+}
+
+.input-text__hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

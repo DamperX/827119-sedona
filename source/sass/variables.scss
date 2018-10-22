@@ -1,10 +1,21 @@
 $blue: #81b3d2;
+$blue-light: #9ac2db;
+$blue-dark: #678fa8;
+$blue-darker: #669ec0;
+$blue-darkest: #5496bd;
 $white: #ffffff;
 $black: #000000;
+$brown: #766357;
+$brown-dark: #604e43;
 $gray-dark: #333333;
 $gray: #eeeeee;
 $gray-light: #fefefe;
 $gray-input: #f2f2f2;
+$gray-darker: #d5d5d5;
+$gray-lighter: #e5e5e5;
+$gray-line: #dbdbdb;
+$gray-darkerst: #a4a4a4;
+$red: #e37176;
 
 $photo-bg: #b86d5c;
 
@@ -13,14 +24,17 @@ $font-page: "PT Sans", arial, sans-serif;
 $font-size-small: 14px;
 $font-size-normal: 18px;
 $font-size-big: 21px;
+$font-size-bigger: 30px;
 
 $line-height-small: 21px;
 $line-height-normal: 24px;
 $line-height-big: 26px;
 $line-height-bigger: 40px;
 
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$mobile-width-only: 767px;
 
 $tablet-indent: 60px;
 $mobile-indent: 20px;

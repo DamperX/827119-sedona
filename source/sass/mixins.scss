@@ -1,11 +1,34 @@
 @mixin input-text-style() {
+  font-family: $font-page;
   font-size: $font-size-normal;
   font-weight: 700;
   line-height: $line-height-big;
   color: $black;
 
   background-color: $gray-input;
-  border: 0;
+  border: 4px solid transparent;
+
+  &:hover {
+    background-color: $gray-lighter;
+  }
+
+  &:focus {
+    border-color: $gray-lighter;
+    outline: none;
+    background-color: transparent;
+  }
+
+  &:focus:invalid:not(:hover) {
+    border-color: $red;
+  }
+
+  &:disabled {
+    background-color: $gray-darkerst;
+  }
+
+  &::placeholder {
+    color: inherit;
+  }
 }
 
 @mixin input-radio-style() {
@@ -27,4 +50,13 @@
   border: 0;
   color: $white;
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-darker;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $blue-darkest;
+  }
 }

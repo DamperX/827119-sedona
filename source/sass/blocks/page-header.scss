@@ -1,9 +1,25 @@
-.page-header {
+.page-header,
+.page-header--index {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 112px;
+  }
 }
+
+.page-header--index {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
 
 .page-header__logo-wrapper {
   width: 100%;
