@@ -40,6 +40,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .input-radio__description:hover::before {

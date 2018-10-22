@@ -6,13 +6,12 @@
   border-top: 1px solid $gray-input;
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid $gray-input;
     padding-left: $mobile-indent;
     padding-right: $mobile-indent;
   }
 
   @media (min-width: $tablet-width) {
-
+    border: 0;
   }
 }
 
@@ -36,14 +35,30 @@
     margin: 0;
     font-size: $font-size-big;
   }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .fieldset__title + * {
   clear: both;
 }
 
+.fieldset--near {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
 .fieldset--near .fieldset__title {
   text-align: left;
+}
+
+.fieldset__title--left {
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .fieldset__description {
@@ -72,6 +87,12 @@
     max-width: 650px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .fieldset__input {
@@ -92,6 +113,12 @@
 
     &:last-of-type {
       margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      padding-right: 80px;
     }
   }
 }

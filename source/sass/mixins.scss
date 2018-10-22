@@ -6,7 +6,25 @@
   color: $black;
 
   background-color: $gray-input;
-  border: 0;
+  border: 4px solid transparent;
+
+  &:hover {
+    background-color: $gray-lighter;
+  }
+
+  &:focus {
+    border-color: $gray-lighter;
+    outline: none;
+    background-color: transparent;
+  }
+
+  &:focus:invalid:not(:hover) {
+    border-color: $red;
+  }
+
+  &:disabled {
+    background-color: $gray-darkerst;
+  }
 
   &::placeholder {
     color: inherit;

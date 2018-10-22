@@ -8,7 +8,10 @@
   flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
-    flex-wrap: no-wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
     width: auto;
   }
 }
@@ -17,7 +20,12 @@
   width: 100%;
   padding-left: 21px;
   @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
     width: auto;
+    padding-right: 15px;
+    padding-left: 0;
   }
 }
 
@@ -40,4 +48,10 @@
   margin-left: 13px;
   padding: 16px 22px;
   @include input-text-style;
+}
+
+.input-text__hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

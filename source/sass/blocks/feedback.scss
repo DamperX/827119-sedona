@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     padding-left: $desktop-indent;
     padding-right: $desktop-indent;
+    margin-bottom: 90px;
   }
 }
 
@@ -28,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 58px;
   }
 }
 
@@ -101,18 +102,14 @@
   }
 }
 
-.fieldset--near {
-  @media (min-width: $tablet-width) {
-    width: 50%;
-    padding: 0;
-    padding-top: 37px;
-  }
-}
-
 .feedback__fieldset--introduce {
   @media (min-width: $tablet-width) {
     padding-top: 57px;
     padding-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -123,6 +120,11 @@
     flex-basis: 100%;
     padding: 0;
     padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding-top: 64px;
   }
 }
 
