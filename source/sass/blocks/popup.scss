@@ -2,13 +2,23 @@
   position: fixed;
   z-index: 1;
   width: 100%;
+  margin: 0 auto;
 
   text-align: center;
 
   box-sizing: border-box;
+  overflow: hidden;
 
   background-color: $white;
   box-shadow: 0 6px 25px -3px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 120px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+  }
 }
 
 .popup__description {
@@ -83,15 +93,20 @@
     width: 400px;
     padding-right: 50px;
     padding-left: 50px;
+    margin: 0 auto;
   }
 }
 
-.popup--fail .popup__heading {
+.popup--fail .popup__title {
   width: 250px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    line-height: $line-height-bigger;
+  }
 }
 
-.popup__hidden {
+.popup--hidden {
   display: none;
 }
