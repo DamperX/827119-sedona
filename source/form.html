@@ -32,11 +32,15 @@
       </nav>
       <div class="page-header__logo-wrapper">
         <a href="index.html" class="page-header__logo-link">
-          <img class="page-header__logo" src="http://placehold.it/150x100" alt="City of Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="City of Sedona" width="102" height="83">
+          </picture>
         </a>
       </div>
       <div class="intro">
-        <img class="intro__image intro-banner" src="http://placehold.it/150x100" alt="Sedona" height="156">
+        <img class="intro__image intro__image--no-index" src="img/text-sedona.svg" alt="Sedona" width="460" height="350">
       </div>
     </header>
 
