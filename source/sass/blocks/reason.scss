@@ -20,6 +20,9 @@
   padding-bottom: 30px;
   background-color: $gray;
 
+  font-family: $font-page;
+  color: $black;
+
   @media (max-width: $mobile-width-only) {
     padding-right: $mobile-indent;
     padding-left: $mobile-indent;
@@ -29,6 +32,7 @@
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 33.3%;
+    max-width: 33.3%;
     padding: 45px 48px;
     box-sizing: border-box;
   }
@@ -51,6 +55,7 @@
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 33.3%;
+    max-width: 33.3%;
     padding: 45px;
 
     box-sizing: border-box;
@@ -141,15 +146,16 @@
 }
 
 .reason__attachments-item {
-  box-sizing: border-box;
   margin-bottom: 18px;
   padding-top: 10px;
   padding-left: 50px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 33.333333%;
+    flex-basis: 33.3%;
+    max-width: 33.3%;
 
     margin: 0;
     padding-top: 159px;

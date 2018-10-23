@@ -27,6 +27,8 @@
       flex-grow: 1;
       flex-shrink: 0;
       flex-basis: 100%;
+
+      max-width: 100%;
     }
 
     &:first-of-type .post__info {
@@ -39,12 +41,6 @@
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 33%;
-
-    &:first-of-type {
-      flex-grow: 1;
-      flex-shrink: 0;
-      flex-basis: 100%;
-    }
   }
 }
 
@@ -57,21 +53,18 @@
   }
 }
 
+.post__photo {
+  display: block;
+}
+
 .post__image {
   display: block;
   width: 100%;
+  height: auto;
   background-color: $photo-bg;
-
-  @media (min-width: $tablet-width) {
-    height: 267px;
-  }
 }
 
-.img__first {  /*Временно*/
-  @media (min-width: $tablet-width) {
-    min-height: 400px;
-  }
-}
+
 
 .post__info {
   display: flex;
