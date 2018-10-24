@@ -2,6 +2,10 @@
   background-color: $blue;
   color: $white;
 
+  @media (max-width: $mobile-width-only) {
+    padding-top: 40px;
+  }
+
   @media (min-width: $tablet-width) {
     flex-grow: 0;
     flex-shrink: 0;
@@ -43,7 +47,7 @@
 }
 
 .reason__wrapper {
-  padding-top: 40px;
+
   padding-bottom: 40px;
 
   @media (max-width: $mobile-width-only) {

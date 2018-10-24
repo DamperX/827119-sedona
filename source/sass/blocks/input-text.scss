@@ -1,4 +1,5 @@
 .input-text {
+  position: relative;
   display: flex;
   align-items: baseline;
   width: 100%;
@@ -55,5 +56,37 @@
 .input-text__hidden {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.input-text--tel::after {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  content: "";
+  width: 58px;
+  height: 58px;
+
+  background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center;
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    right: 80px;
+  }
+}
+
+.input-text--email::after {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  content: "";
+  width: 58px;
+  height: 58px;
+
+  background: #e6e6e6 url("../img/icon-mail.svg") no-repeat center;
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    right: 0;
   }
 }
