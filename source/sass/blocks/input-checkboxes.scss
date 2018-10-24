@@ -5,9 +5,11 @@
 
 .input-check__description {
   display: block;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 20px;
   padding-left: 80px;
+
+  color: $black;
 
   &::before {
     position: absolute;

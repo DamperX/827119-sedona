@@ -45,12 +45,6 @@
   }
 }
 
-.video:hover .video__player {
-  @media (min-width: $tablet-width) {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-}
-
 .video__control {
   line-height: 0;
 
@@ -124,7 +118,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 20%;
+    left: 22%;
   }
 }
 
@@ -136,4 +130,30 @@
 
   border: 0;
   background-color: transparent;
+}
+
+.video__icon {
+  fill: $grey-asphalt;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+  }
+}
+
+.video__btn:hover .video__icon,
+.video__btn:focus .video__icon {
+  fill: $gray-dark;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+    opacity: 0.6;
+  }
+}
+
+.video__btn:active .video__icon {
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
+  }
 }

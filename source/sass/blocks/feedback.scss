@@ -97,6 +97,7 @@
   box-sizing: border-box;
   padding: 0;
   padding-top: 18px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
@@ -134,7 +135,7 @@
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 100%;
-    margin-bottom: 26px;
+    margin-bottom: 11px;
     padding-top: 42px;
   }
 }
@@ -164,6 +165,7 @@
     flex-shrink: 0;
     flex-basis: 100%;
     padding-top: 58px;
+    margin-bottom: 23px;
   }
 }
 

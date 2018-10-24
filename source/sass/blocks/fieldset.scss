@@ -44,11 +44,14 @@
 .fieldset--near {
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-bottom: 23px;
   }
 }
 
 .fieldset--near .fieldset__title {
-  text-align: left;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .fieldset__title--left {
@@ -134,7 +137,7 @@
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 44%;
-    margin-bottom: 35px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {

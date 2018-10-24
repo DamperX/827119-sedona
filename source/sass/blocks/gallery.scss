@@ -1,11 +1,12 @@
 .gallery {
-  margin-bottom: 71px;
+  margin-bottom: 77px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     padding-left: $tablet-indent;
     padding-right: $tablet-indent;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +33,7 @@
 }
 
 .gallery__header--video {
-  padding-top: 37px;
+  padding-top: 33px;
   margin-bottom: 35px;
 
   border-top: 1px solid $gray-input;
