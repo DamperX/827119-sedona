@@ -146,12 +146,14 @@
 }
 
 .reason__attachments-item {
+  position: relative;
   margin-bottom: 18px;
   padding-top: 10px;
   padding-left: 50px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 33.3%;
@@ -167,6 +169,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     padding-top: 161px;
     padding-bottom: 82px;
     padding-right: 55px;
@@ -175,6 +178,22 @@
 
   &:nth-child(2) {
     order: 1;
+  }
+}
+
+.reason__item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $blue;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 50%;
+
+    width: 80px;
+    height: 76px;
+    margin-left: -40px;
   }
 }
 

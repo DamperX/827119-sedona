@@ -120,6 +120,7 @@
 }
 
 .post__likes {
+  position: relative;
   padding-left: 36px;
 
   @media (min-width: $tablet-width) {

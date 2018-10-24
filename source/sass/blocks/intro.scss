@@ -87,7 +87,11 @@
 
 .intro--first-page {
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }

@@ -12,6 +12,15 @@
   text-decoration: none;
 }
 
-.academy__img {
-  margin-left: 16px;
+.academy-logo {
+  margin-left: 13px;
+}
+
+.academy-link:hover .academy-logo {
+  fill: $blue;
+}
+
+.academy-link:active .academy-logo {
+  fill: $black;
+  opacity: 0.3;
 }
