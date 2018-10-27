@@ -4,12 +4,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <div class="page-wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -41,9 +42,6 @@
           <img class="intro__image intro__image--no-index" src="img/text-sedona.svg" alt="Sedona" width="460" height="350">
         </div>
       </header>
-
-      <!----Main---->
-
       <main class="page-main">
         <section class="gallery">
           <header class="gallery__header">
@@ -55,6 +53,9 @@
               <figure class="post__content">
                 <a href="#" class="post__photo">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
@@ -66,14 +67,8 @@
                     <p class="post__author">Автор фото: Борис</p>
                   </div>
                   <div class="post__likes">
-                    <svg class="post__likes-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                      <g id="Page-1">
-                        <g id="Core" transform="translate(-295.000000, -464.000000)">
-                          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                            <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                          </g>
-                        </g>
-                      </g>
+                    <svg class="post__likes-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                      <path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2c0 .018 0 .037.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/>
                     </svg>
                     <span class="post__likes-amount">
                       1350
@@ -86,6 +81,9 @@
               <figure class="post__content">
                 <a href="#" class="post__photo">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Неродные просторы">
@@ -97,14 +95,8 @@
                     <p class="post__author">Автор фото: Сергей</p>
                   </div>
                   <div class="post__likes">
-                    <svg class="post__likes-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                      <g id="Page-1">
-                        <g id="Core" transform="translate(-295.000000, -464.000000)">
-                          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                            <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                          </g>
-                        </g>
-                      </g>
+                    <svg class="post__likes-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                      <path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2c0 .018 0 .037.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/>
                     </svg>
                     <span class="post__likes-amount">
                       143
@@ -117,6 +109,9 @@
               <figure class="post__content">
                 <a href="#" class="post__photo">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Неродные просторы">
@@ -128,14 +123,8 @@
                     <p class="post__author">Автор фото: Петр</p>
                   </div>
                   <div class="post__likes">
-                    <svg class="post__likes-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                      <g id="Page-1">
-                        <g id="Core" transform="translate(-295.000000, -464.000000)">
-                          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                            <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                          </g>
-                        </g>
-                      </g>
+                    <svg class="post__likes-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                      <path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2c0 .018 0 .037.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/>
                     </svg>
                     <span class="post__likes-amount">
                       96
@@ -148,6 +137,9 @@
               <figure class="post__content">
                 <a href="#" class="post__photo">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Неродные просторы">
@@ -159,14 +151,8 @@
                     <p class="post__author">Автор фото: Антон</p>
                   </div>
                   <div class="post__likes">
-                    <svg class="post__likes-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                      <g id="Page-1">
-                        <g id="Core" transform="translate(-295.000000, -464.000000)">
-                          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                            <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                          </g>
-                        </g>
-                      </g>
+                    <svg class="post__likes-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                      <path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2c0 .018 0 .037.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/>
                     </svg>
                     <span class="post__likes-amount">
                       254
@@ -183,6 +169,9 @@
           <article class="video gallery-video">
             <h3 class="visually-hidden">Видео-презентация Седоны</h3>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video__file" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео-презентация Седоны">
@@ -196,27 +185,25 @@
                 </div>
                 <div class="video__control video__control--btn">
                   <button type="button" class="video__btn">
-                    <svg class="video__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
-                      <path d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
+                    <svg class="video__icon" width="63" height="65">
+                      <title>Повтор</title>
+                      <use xlink:href="img/sprite.svg#video-replay"></use>
                     </svg>
                   </button>
                 </div>
                 <div class="video__control video__control--btn">
                   <button type="button" class="video__btn">
-                    <svg class="video__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve">
-                      <path d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z M14.403,15.854c-0.545,0.108-1.104,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041 s-0.852-1.103-1.133-1.868C7.69,12.02,7.551,11.091,7.551,10c0-1.134,0.157-2.085,0.471-2.851c0.315-0.768,0.723-1.384,1.224-1.854  c0.502-0.468,1.062-0.804,1.679-1.008c0.616-0.204,1.233-0.307,1.852-0.307c0.66,0,1.22,0.045,1.678,0.134  c0.457,0.087,0.835,0.192,1.133,0.313L15.14,6.347c-0.254-0.121-0.555-0.209-0.902-0.265C13.891,6.027,13.47,6,12.973,6 c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031c0,0.598,0.067,1.142,0.199,1.632  c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.607,0.619,1.01,0.812c0.402,0.193,0.867,0.29,1.396,0.29  c0.496,0,0.915-0.049,1.257-0.148c0.342-0.099,0.639-0.227,0.893-0.38l0.463,1.841C15.398,15.564,14.949,15.745,14.403,15.854z   M23.101,15.854c-0.545,0.108-1.105,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041  s-0.852-1.103-1.133-1.868c-0.281-0.767-0.421-1.695-0.421-2.786c0-1.134,0.157-2.085,0.471-2.851  c0.314-0.768,0.723-1.384,1.223-1.854c0.502-0.468,1.062-0.804,1.68-1.008c0.616-0.204,1.233-0.307,1.851-0.307 c0.661,0,1.221,0.045,1.678,0.134c0.458,0.087,0.836,0.192,1.133,0.313l-0.446,1.918c-0.253-0.121-0.554-0.209-0.901-0.265  C22.588,6.027,22.166,6,21.67,6c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031  c0,0.598,0.067,1.142,0.199,1.632c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.606,0.619,1.009,0.812 c0.402,0.193,0.868,0.29,1.396,0.29c0.497,0,0.915-0.049,1.257-0.148c0.342-0.099,0.64-0.227,0.894-0.38l0.463,1.841  C24.096,15.564,23.646,15.745,23.101,15.854z"/>
+                    <svg class="video__icon" width="63" height="65">
+                      <title>Субтитры</title>
+                      <use xlink:href="img/sprite.svg#video-sub"></use>
                     </svg>
                   </button>
                 </div>
                 <div class="video__control video__control--btn">
                   <button type="button" class="video__btn">
-                    <svg class="video__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-                      <g>
-                        <polygon points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"/>
-                        <polygon points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/>
-                        <polygon points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/>
-                        <polygon points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/>
-                      </g>
+                    <svg class="video__icon" width="63" height="65">
+                      <title>Полный экран</title>
+                      <use xlink:href="img/sprite.svg#video-full"></use>
                     </svg>
                   </button>
                 </div>
@@ -232,44 +219,45 @@
             <ul class="social">
               <li class="social__item">
                 <a href="#" class="social__btn social__btn--tw">
-                  <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 46 48" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                    <g id="W6EeEF_1_">
-                      <g>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3 16.2c1.7-.5 3 .2 3.7 1.1l2-.7c0 .9-.5 1.5-.8 1.7.7.2 1.3-.4 1.3-.4-.2 1-1 1.7-1.6 2-.3 6.5-3.3 10.9-10.4 10.8H20c-.4 0-4.2-.5-5-1.9 2.3.2 4-.4 4.8-1.1-1-.3-2.7-.5-3-3 .2.3.5.3 1.2.3-1.2-.9-2.6-1.6-2.5-3.8a2 2 0 0 0 1.3.5c-.7-.3-2-3.3-.9-4.9 1.9 1.9 3.9 3.6 7.4 3.7.2-2.2 1.2-3.7 3-4.3z"></path>
-                      </g>
-                    </g>
+                  <svg class="social__icon" width="46" height="48">
+                    <title>Twitter</title>
+                    <use xlink:href="img/sprite.svg#tw-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__btn social__btn--fb">
-                  <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 46 48" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                    <path d="M25.5 16.4h2.4V13H25c-3.1.2-4.3 2.4-3.9 6.1h-1.9v3.5h2V32H25v-9.4h2.9v-3.5h-3c0-1 0-2.4.6-2.7z"></path>
+                  <svg class="social__icon" width="46" height="48">
+                    <title>Facebook</title>
+                    <use xlink:href="img/sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__btn social__btn--yt">
-                  <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 46 48" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                    <path d="M30.6 17H16.3a2.8 2.8 0 0 0-2.8 2.8v8.4c0 1.5 1.3 2.8 2.8 2.8h14.3c1.6 0 2.9-1.3 2.9-2.8v-8.4c0-1.5-1.3-2.8-3-2.8zm-10 10.4v-6.8l6.6 3.4-6.7 3.4z"></path>
+                  <svg class="social__icon" width="46" height="48">
+                    <title>Youtube</title>
+                    <use xlink:href="img/sprite.svg#yt-icon"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyright">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">
+            <a class="academy-link" href="https://htmlacademy.ru/intensive/adaptive">
               Разработано
-              <svg class="academy-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.943 34.09" width="27" height="34">
-                <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8L25 13.5l-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15l11.4 7v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z"></path>
+              <svg class="academy-logo" width="27" height="34">
+                <title>HTML Academy</title>
+                <use xlink:href="img/sprite.svg#academy-icon"></use>
               </svg>
             </a>
           </div>
         </div>
       </footer>
     </div>
-    <script src="js/page-header.js"></script>
-    <script src="js/popup.js"></script>
     <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/page-header.js"></script>
   </body>
 </html>
