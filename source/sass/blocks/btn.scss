@@ -15,3 +15,9 @@
 
   @include btn-style;
 }
+
+.btn--popup {
+  @media (min-width: $mobile-width) {
+    font-size: $font-size-normal;
+  }
+}

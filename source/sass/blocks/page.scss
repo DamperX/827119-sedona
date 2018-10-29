@@ -1,17 +1,20 @@
 .page {
-  margin: 0;
-  background-color: $gray-input;
+  margin: 0 auto;
   font-family: $font-page;
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-input;
+  }
 }
 
 
 .page-wrapper {
   min-width: 320px;
   max-width: 1200px;
-  margin: 0 auto;
-  background-color: $white;
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    background-color: $white;
     box-shadow: 0 0 60px -5px rgba(black, 0.2);
   }
 }

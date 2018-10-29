@@ -47,8 +47,12 @@
 
 .input-text__field {
   width: 100%;
+  min-height: 26px;
   margin-left: 13px;
-  padding: 12px 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 18px;
+  padding-left: 18px;
 
   @include input-text-style;
 }
@@ -65,12 +69,12 @@
   right: 0;
   content: "";
   width: 58px;
-  height: 58px;
+  height: 56px;
 
   background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center;
 
   @media (min-width: $desktop-width) {
-    top: 8px;
+    top: 9px;
     right: 80px;
   }
 }

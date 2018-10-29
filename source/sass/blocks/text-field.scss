@@ -6,5 +6,7 @@
 
   resize: none;
 
+  overflow: auto;
+
   @include input-text-style;
 }

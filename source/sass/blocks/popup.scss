@@ -1,5 +1,5 @@
 .popup {
-  position: fixed;
+  position: relative;
   z-index: 1;
   width: 100%;
   margin: 0 auto;
@@ -65,11 +65,15 @@
 
 .popup__btn-wrapper {
   max-width: 275px;
-  margin-right: auto;
+  margin: 0 auto;
   margin-bottom: 35px;
-  margin-left: auto;
   padding-right: 50px;
   padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .popup__btn-wrapper--gray {
@@ -86,6 +90,10 @@
     margin: 0;
     padding: 45px 92px;
   }
+}
+
+.popup__btn {
+  font-size: 18px;
 }
 
 .popup--fail {

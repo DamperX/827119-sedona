@@ -67,7 +67,7 @@ gulp.task("collect", gulp.series (
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
@@ -84,4 +84,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("collect", "server"));
+gulp.task("start", gulp.series("server"));
+gulp.task("build", gulp.series("collect"));
