@@ -1661,7 +1661,8 @@
     .input-radio__description {
       padding-left: 80px; } }
 
-.input-radio__description:hover::before {
+.input-radio__description:hover::before,
+.input-radio__btn:focus + .input-radio__description::before {
   background-color: #e5e5e5; }
 
 .input-radio__btn:checked + .input-radio__description::after {
@@ -1707,7 +1708,8 @@
     width: 55px;
     height: 55px; }
 
-.input-check__description:hover::before {
+.input-check__description:hover::before,
+.input-check__btn:focus + .input-check__description::before {
   background-color: #e5e5e5; }
 
 .input-check__description:active::before {
@@ -1750,10 +1752,14 @@
     color: inherit; }
 
 .popup {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   z-index: 1;
   width: 100%;
   margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1812,6 +1818,14 @@
       padding-right: 0;
       padding-left: 0; } }
 
+@media (min-width: 320px) {
+  .popup__btn-wrapper--small {
+    max-width: 180px; } }
+
+@media (min-width: 768px) {
+  .popup__btn-wrapper--small {
+    max-width: 272px; } }
+
 .popup__btn-wrapper--gray {
   width: 100%;
   max-width: none;
@@ -1837,11 +1851,11 @@
     margin: 0 auto; } }
 
 .popup--fail .popup__title {
-  width: 250px;
-  margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-right: auto; }
   @media (min-width: 768px) {
     .popup--fail .popup__title {
+      width: 250px;
       line-height: 40px; } }
 
 .popup--hidden {

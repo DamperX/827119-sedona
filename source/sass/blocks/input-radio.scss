@@ -46,7 +46,8 @@
   }
 }
 
-.input-radio__description:hover::before {
+.input-radio__description:hover::before,
+.input-radio__btn:focus + .input-radio__description::before {
   background-color: $gray-lighter;
 }
 

@@ -39,7 +39,8 @@
   @include input-checkbox-style;
 }
 
-.input-check__description:hover::before {
+.input-check__description:hover::before,
+.input-check__btn:focus + .input-check__description::before {
   background-color: $gray-lighter;
 }
 
